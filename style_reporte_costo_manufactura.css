@@ -1,0 +1,187 @@
+h1 {
+  background-color: #082954;
+  color: #fdfdff;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0.6rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  border-radius: 5px !important;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+}
+
+select {
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contenedor {
+  max-width: 90%;
+  margin: 1rem auto;
+  padding-bottom: 4rem !important;
+}
+
+.btn-busqueda {
+  line-height: 18px;
+  background-color: #082954;
+  border: 1px solid transparent !important;
+  color: #fdfdff;
+  font-size: 14px;
+  border-radius: 5px !important;
+  height: 35px;
+  width: 100%;
+}
+
+.btn-tipo-cambio {
+  line-height: 18px;
+  background-color: #62b6cb;
+  border: 1px solid transparent !important;
+  color: #fdfdff;
+  font-size: 14px;
+  border-radius: 5px !important;
+  height: 35px;
+  width: 100%;
+}
+
+.grid-busqueda {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 0px 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.grid-busqueda .grid-busqueda-tipo-cambio {
+  grid-column-start: 10;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.grid-busqueda .grid-busqueda-fecha-inicio {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.grid-busqueda .grid-busqueda-fecha-fin {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.grid-busqueda .grid-busqueda-tipo-cambio-actual {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.page-link {
+  color: #082954;
+}
+
+.page-link.active,
+.active > .page-link {
+  background-color: #082954;
+  border-color: #fdfdff;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #1295eb;
+  font-weight: 700;
+}
+
+.margin-busqueda {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+table.dataTable thead tr > .dtfc-fixed-left,
+table.dataTable thead tr > .dtfc-fixed-right {
+  /* z-index: 1; */
+  background-color: #082954;
+}
+
+/*Estilo de tabla*/
+/*BOTONES DE PDF Y EXCEL EN DATA TABLES*/
+.dt-buttons {
+  float: right;
+  margin-left: 0.8rem;
+  padding: 0;
+}
+.dt-buttons.btn {
+  font-size: 14px;
+}
+.dt-buttons .buttons-html5 {
+  width: 8rem !important;
+  /* height: 2.1rem;*/
+  line-height: 18px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent !important;
+  color: var(--dark);
+  font-size: 14px;
+  height: 35px !important;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  text-align: center !important;
+}
+
+.head-color {
+  background-color: #082954;
+  color: #fdfdff;
+  text-transform: uppercase;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/**********************************************/
+.swal2-styled.swal2-confirm {
+  font-size: 14px;
+  width: 100px;
+  background-color: #082954;
+  margin-bottom: 25px;
+}
+
+.swal2-popup {
+  width: 50em;
+  height: 35em;
+  padding: 0;
+}
+
+.swal2-html-container {
+  padding: 0 20px;
+}
+
+.swal2-title {
+  background-color: #082954;
+  color: #fdfdff;
+  padding-top: 20px;
+  height: 60px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}/*# sourceMappingURL=style_reporte_costo_manufactura.css.map */

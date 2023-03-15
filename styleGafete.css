@@ -1,0 +1,211 @@
+:root {
+    --colorLogoImssa: #0233A0;
+    --light: #ffffff;
+    --dark: #000000;
+}
+@font-face {
+    font-family: Lato;
+    src: url('http://192.168.1.253:8080/LAMM/fonts/Lato2OFL/Lato-Black.ttf');
+    src: url('http://192.168.1.253:8080/LAMM/fonts/Lato2OFL/Lato-Regular.ttf');
+    src: url('http://192.168.1.253:8080/LAMM/fonts/Lato2OFL/Lato-Bold.ttf');
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Lato',"Lato", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    /*  zoom: 120%; */
+     -webkit-print-color-adjust: exact; 
+    margin: 0;
+}
+
+/* envuelve todo el contenido del gafete*/
+.contenedor {
+    width: 16.194rem;
+     height: 25.6rem;    
+/*      height: 25.69rem;*/
+    /*  border: 1px solid black;*/     
+    margin: 0 auto;
+    /* margin-top: 6rem; */
+}
+/* botones de imprimir */
+.button {
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: var(--colorLogoImssa);
+    color: var(--light);
+    border: 0 solid transparent;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+/* GAFETE FRONTAL */
+
+/* parte superior de IMSSA actua como header*/
+h1 {
+    background-color: var(--colorLogoImssa);
+    color: var(--light);
+    font-size: 8px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 23px;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+/* parte  inferior, ubicacion del no de reloj*/
+h2 {
+    background-color: var(--colorLogoImssa);
+    color: var(--light);
+    font-size: 12px;
+    text-align: center;
+    height: 23px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+     bottom: 0.3rem; 
+
+}
+
+/* centra todo el contenido del gafete, menos el h1 y el h2 */
+.labelCenter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.labelNombre {
+    font-size: 18px;
+     margin: 0 5%; 
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.labelPuesto {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--colorLogoImssa);
+    margin: 0.4rem 5% 0 5%;
+    line-height: 14px;
+}
+
+
+.infotext {
+    font-size: 15px;
+    line-height: 14.5px;
+    margin-top: 3px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 4fr 6fr; 
+    margin: 0 3rem; /* 3 columns */
+  grid-template-rows: auto;
+  column-gap: 10px;
+}
+.txt-right{
+    text-align: right;
+}
+.txt-left{
+    text-align: left;
+}
+
+.img-logo {
+    width: 7.5rem;
+    height: auto;
+    margin: 0.7rem 1rem 0 1rem;
+}
+
+
+/* crea la linea divisora entre la info general del puesto, nombre */
+.divisor {
+    border-bottom: 1px solid gray;
+    width: 80%;
+    margin: 2px auto;
+}
+/*  */
+.img-user {
+    width: 5.5rem;
+    height: 7.33rem;
+   /*  border: 1px solid black; */
+    margin: 2px auto;
+    display: flex;
+
+}
+.img{
+    width:100%;
+    height: auto;
+    max-height: 7.33rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+.img:hover{
+    cursor: pointer;
+}
+
+/*  orficio de corte del gafete */
+.orificio {
+    border: 1px solid black;
+    margin: 10px auto 0 auto;
+    width: 45px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+
+/*GAFETE REVERSO*/
+
+/* titulos */
+h3{
+    background-color: var(--colorLogoImssa);
+    color: var(--light);
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+/*     font-weight: bold; */
+}
+.mantra-titulo{
+    margin-top: 0.7rem;
+}
+/* texto */
+.mantra{
+    font-size: 15px;
+  font-weight: bold; 
+}
+p{
+    font-size: 9.6px;
+    text-align: center;
+    margin: 0.2rem 0.8rem 0.223rem 0.8rem;
+    margin-top: 3.4px;
+}
+
+/*GAFETE PRACTICANTE*/
+.labelEscuela{
+    font-size: 15px;
+    margin: 0 5%; 
+   font-weight: bold;
+   line-height: 16px;
+}
+.h2-gafete{
+    bottom: 0.8rem !important;
+}

@@ -1,0 +1,195 @@
+//Para crear variables es con el signo de dollar 
+$dark: #000000;
+$light: #ffffff;
+$primarylight: #fdfdff;
+$primarydark: #082954;
+
+
+@mixin btn($bgColor, $color, $fontsize, $heigth) {
+  line-height: 18px;
+  background-color: $bgColor;
+  border: 1px solid transparent !important;
+  color: $color;
+  font-size: $fontsize;
+  border-radius: 5px !important;
+  height: $heigth;
+  width: 100%;
+}
+
+@mixin grid ($columnas) {
+  display: grid;
+  grid-template-columns: repeat($columnas, 1fr);
+  gap: 0px 10px;
+  column-gap: 10px;
+}
+
+@mixin grid-col-row ($colStart, $colEnd, $rowStart, $rowEnd) {
+  grid-column-start: $colStart;
+  grid-column-end: $colEnd;
+  grid-row-start: $rowStart;
+  grid-row-end: $rowEnd;
+}
+
+h1 {
+  background-color: $primarydark;
+  color: $primarylight;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0.6rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  border-radius: 5px !important;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+}
+
+select {
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contenedor {
+  max-width: 90%;
+  margin: 1rem auto;
+  padding-bottom: 4rem !important;
+}
+
+.btn-busqueda {
+  @include btn($primarydark, $primarylight, 14px, 35px);
+}
+
+.btn-tipo-cambio {
+  @include btn(#62b6cb, $primarylight, 14px, 35px);
+}
+
+.grid-busqueda {
+  @include grid(11);
+
+  & .grid-busqueda-tipo-cambio {
+    @include grid-col-row(10, 12, 1, 2);
+  }
+
+  & .grid-busqueda-fecha-inicio {
+    @include grid-col-row(1, 3, 1, 2);
+  }
+
+  & .grid-busqueda-fecha-fin {
+    @include grid-col-row(3, 5, 1, 2);
+  }
+  & .grid-busqueda-tipo-cambio-actual {
+    @include grid-col-row(8, 10, 1, 2);
+  }
+}
+
+.page-link {
+  color: $primarydark;
+}
+
+.page-link.active,
+.active>.page-link {
+  background-color: $primarydark;
+  border-color: $primarylight;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #1295eb;
+  font-weight: 700;
+}
+
+.margin-busqueda {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+table.dataTable thead tr>.dtfc-fixed-left,
+table.dataTable thead tr>.dtfc-fixed-right {
+  /* z-index: 1; */
+  background-color: $primarydark;
+}
+
+
+
+/*Estilo de tabla*/
+/*BOTONES DE PDF Y EXCEL EN DATA TABLES*/
+.dt-buttons {
+  float: right;
+  margin-left: 0.8rem;
+  padding: 0;
+
+  &.btn {
+    font-size: 14px;
+  }
+
+  & .buttons-html5 {
+    width: 8rem !important;
+    /* height: 2.1rem;*/
+    line-height: 18px;
+    background-color: rgb(0 0 0 / 5%);
+    border: 1px solid transparent !important;
+    color: var(--dark);
+    font-size: 14px;
+    height: 35px !important;
+  }
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  text-align: center !important;
+}
+
+.head-color {
+  background-color: $primarydark;
+  color: $primarylight;
+  text-transform: uppercase;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/**********************************************/
+.swal2-styled.swal2-confirm {
+
+  font-size: 14px;
+  width: 100px;
+  background-color: $primarydark;
+  margin-bottom: 25px;
+}
+.swal2-popup {
+  width: 50em;
+  height: 35em;
+  padding: 0;
+}
+.swal2-html-container {
+  padding: 0 20px;
+}
+.swal2-title {
+  background-color: $primarydark;
+  color: $primarylight;
+  padding-top: 20px;
+  height: 60px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
